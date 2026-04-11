@@ -4,7 +4,6 @@ import {
   Text,
   TextInput,
   Button,
-  StyleSheet,
   ScrollView,
   Alert,
 } from "react-native";
@@ -21,6 +20,7 @@ import { Especialidade } from "../types/especialidade";
 import { Medico } from "../interfaces/medico";
 import { Paciente } from "../types/paciente";
 import { Consulta } from "../interfaces/consulta";
+import { styles } from "../styles/admin.styles";
 
 export default function Admin({ navigation }: any) {
   // Estados para especialidade
@@ -218,43 +218,3 @@ export default function Admin({ navigation }: any) {
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#f5f5f5",
-  },
-  content: {
-    flex: 1,
-    padding: 20,
-  },
-  secao: {
-    backgroundColor: "#fff",
-    padding: 20,
-    borderRadius: 8,
-    marginBottom: 20,
-  },
-  titulo: {
-    fontSize: 18,
-    fontWeight: "bold",
-    color: "#333",
-    marginBottom: 15,
-  },
-  input: {
-    backgroundColor: "#f5f5f5",
-    borderWidth: 1,
-    borderColor: "#ddd",
-    borderRadius: 8,
-    padding: 12,
-    marginBottom: 10,
-    fontSize: 16,
-  },
-  lista: {
-    marginTop: 15,
-  },
-  item: {
-    fontSize: 14,
-    color: "#666",
-    marginBottom: 8,
-  },
-});
