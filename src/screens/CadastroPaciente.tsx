@@ -4,7 +4,7 @@ import {
   Text,
 } from "react-native";
 import { StatusBar } from "expo-status-bar";
-import { styles } from "../styles/cadastroPaciente.styles";
+import { styles } from "../styles/cadastropaciente.styles";
 // Componente não utilizado na versão simplificada
 
 type CadastroPacienteProps = {
